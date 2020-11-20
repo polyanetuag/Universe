@@ -16,7 +16,7 @@ O projeto "Universe" é um site focado no nosso maravilhoso universo. Traz image
  - [x] Montar o planejamento (16 - 17/11/2020)
 
  - [ ] Montar a estrutura inicial -> (18 - 27/11/2020);
-   - [ ] Criar HTML (18 - 20/11/2020); 
+   - [x] Criar HTML (18 - 20/11/2020); 
    - [ ] Criar CSS (21 - 23/11/2020);
    - [ ] Criar JS (24 -27/11/2020);
 
