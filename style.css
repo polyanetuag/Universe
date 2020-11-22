@@ -21,6 +21,22 @@
 .side-left{
   background: rgba(0, 0, 0, 0.3); 
   grid-area: aside;
+  justify-content: space-between;
+}
+
+.title {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.6rem;
+  writing-mode: vertical-lr;
+  transform: rotate(180deg);
+
+
+}
+
+.share {
+  /* display: flex;
+  align-items: flex-end; */
+  justify-content: space-around;
 }
 
 .container {
@@ -39,4 +55,5 @@
 .footer {
   background: rgba(0, 0, 0, 0.3);
   grid-area: footer;
+  z-index: 100;
 }
