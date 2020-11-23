@@ -8,10 +8,10 @@
   display: grid;
   width: 100%;
   height: 100vh;
-  grid-template-areas: "aside container"
-                       "aside container"
-                       "aside footer";
-  grid-template-columns: 110px 2fr 70px;
+  grid-template-areas: "left container right"
+                       "left container right"
+                       "left footer footer";
+  grid-template-columns: 80px 2fr 70px;
   grid-template-rows: 100px 2fr 150px;
   
   background-image: url(https://images.unsplash.com/photo-1462332420958-a05d1e002413?ixlib=rb-1.2.1&auto=format&fit=crop&w=2840&q=80);
@@ -19,25 +19,48 @@
 }
 
 .side-left{
+  grid-area: left;
   background: rgba(0, 0, 0, 0.3); 
-  grid-area: aside;
-  justify-content: space-between;
+  
+  display: inline-block;
+  align-items: center;
+  justify-content: center; 
 }
 
-.title {
+.side-left .dev svg {
+  color: white;
+  margin: 30px 0 0 20px;
+  height: 38px;
+  width: 38px;
+}
+
+.side-left .search svg {
+  color: white;
+  margin: 30px 0 0 20px;
+  height: 38px;
+  width: 38px;
+}
+
+.side-left .title {
   font-family: 'Playfair Display', serif;
   font-size: 1.6rem;
+  font-weight: 600;
+  letter-spacing: 2px;
+  color: white;
   writing-mode: vertical-lr;
   transform: rotate(180deg);
 
-
+  margin: 180px auto;
 }
 
-.share {
-  /* display: flex;
-  align-items: flex-end; */
-  justify-content: space-around;
+.side-left .share svg {
+  color: white;
+  margin: 30px 0 0 20px;
+  height: 38px;
+  width: 38px;
 }
+
+
 
 .container {
   grid-area: container;
@@ -45,7 +68,9 @@
 }
 
 
-
+.side-right {
+  grid-area: right;
+}
 
 /* .side-right {
   background:white;
@@ -55,5 +80,5 @@
 .footer {
   background: rgba(0, 0, 0, 0.3);
   grid-area: footer;
-  z-index: 100;
+  
 }
